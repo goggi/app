@@ -4,18 +4,14 @@ FROM node:lts-alpine
 RUN npm install -g http-server
 RUN apk add yarn
 
-
 # make the 'app' folder the current working directory
 WORKDIR /app
 
-# copy both 'package.json' and 'package-lock.json' (if available)
-COPY package*.json ./
+# copy project files and folders to the current working directory (i.e. 'app' folder)
+COPY . .
 
 # install project dependencies
 RUN yarn
-
-# copy project files and folders to the current working directory (i.e. 'app' folder)
-COPY . .
 
 # build app for production with minifications
 RUN yarn build
