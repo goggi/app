@@ -1,0 +1,55 @@
+image: docker:19.03.1
+services:
+  - docker:19.03.1-dind
+stages:
+  - package
+  - deploy
+
+package-test:
+  stage: package
+  only:
+    - test
+  before_script:
+    - echo -n $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:test || true
+    - docker build -t $CI_REGISTRY_IMAGE:test .
+    - docker push $CI_REGISTRY_IMAGE:test
+
+package-master:
+  stage: package
+  only:
+    - master
+  before_script:
+    - echo -n $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
+  script:
+    - docker pull $CI_REGISTRY_IMAGE:latest || true
+    - docker build -t $CI_REGISTRY_IMAGE .
+    - docker push $CI_REGISTRY_IMAGE
+
+deploy-test:
+  stage: deploy
+  only:
+    - test
+  environment:
+    name: test
+  variables:
+    NAME: test-crawlyfi-product-srv-$CI_PROJECT_NAME
+    REPLICAS: 1
+    NETWORK: traefik-public
+    URL: masterdata.app.crawlyfi.dev
+    PORT: 8080
+    TRAEFIK: "-l traefik.enable=true -l traefik.frontend.rule=Host:$URL -l traefik.port=$PORT -l traefik.docker.network=$NETWORK -l traefik.redirectorservice.frontend.entryPoints=http -l traefik.redirectorservice.frontend.redirect.entryPoint=https -l traefik.webservice.frontend.entryPoints=https -l traefik.tags=traefik-public"
+  before_script:
+    - "which ssh-agent || ( apk upgrade && apk update && apk add openssh-client )"
+    - eval $(ssh-agent -s)
+    - echo "$TEST_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - apk upgrade && apk update
+    - apk add openssh-client
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker login -u "gitlab-ci-token" -p $CI_JOB_TOKEN $CI_REGISTRY
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker pull $CI_REGISTRY_IMAGE:test
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT "docker service rm $NAME || true"
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker service create -d --name $NAME --with-registry-auth --replicas $REPLICAS --network $NETWORK $TRAEFIK $CI_REGISTRY_IMAGE:test    
