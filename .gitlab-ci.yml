@@ -37,7 +37,7 @@ deploy-test:
     NAME: test-crawlyfi-product-srv-$CI_PROJECT_NAME
     REPLICAS: 1
     NETWORK: traefik-public
-    URL: product.crawlyfi.dev
+    URL: product.app.crawlyfi.dev
     PORT: 8080
     TRAEFIK: "-l traefik.enable=true -l traefik.frontend.rule=Host:$URL -l traefik.port=$PORT -l traefik.docker.network=$NETWORK -l traefik.redirectorservice.frontend.entryPoints=http -l traefik.redirectorservice.frontend.redirect.entryPoint=https -l traefik.webservice.frontend.entryPoints=https -l traefik.tags=traefik-public"
   before_script:
