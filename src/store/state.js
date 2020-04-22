@@ -2,7 +2,8 @@
 const path = window.location.pathname;
 const parts = path.split('/');
 const adminIndex = parts.indexOf('admin');
-const apiRootPath = parts.slice(0, adminIndex).join('/') + '/';
+let apiRootPath = parts.slice(0, adminIndex).join('/') + '/';
+apiRootPath = apiRootPath + 'api/';
 
 // Default state
 export default {

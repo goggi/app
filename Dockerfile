@@ -1,20 +1,18 @@
-FROM node:lts-alpine
-
-# install simple http server for serving static content
-RUN npm install -g http-server
-RUN apk add yarn
-
-# make the 'app' folder the current working directory
+# First step: Build with Node.js
+FROM node:lts-alpine AS Builder
 WORKDIR /app
-
-# copy project files and folders to the current working directory (i.e. 'app' folder)
-COPY . .
-
-# install project dependencies
-RUN yarn
-
-# build app for production with minifications
+COPY package.json yarn.lock /app/
+RUN yarn install
+COPY . /app
 RUN yarn build
 
-EXPOSE 8080
-CMD [ "http-server", "dist" ]
+# Deliver the dist folder with Nginx
+FROM nginx:stable-alpine
+
+COPY nginx.conf.template /etc/nginx/conf.d/default.conf.template
+COPY --from=Builder /app/dist /usr/share/nginx/html
+COPY docker-entrypoint.sh /
+
+EXPOSE 80
+ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
+CMD ["nginx", "-g", "daemon off;"]
