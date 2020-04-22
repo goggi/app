@@ -4,7 +4,7 @@ const path = window.location.pathname;
 const parts = path.split('/');
 const adminIndex = parts.indexOf('admin');
 let apiRootPath = parts.slice(0, adminIndex).join('/') + '/';
-apiRootPath = apiRootPath + 'api/';
+//apiRootPath = apiRootPath + 'api/';
 
 const client = new SDK({
 	mode: 'cookie',
