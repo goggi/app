@@ -393,7 +393,24 @@ export default {
 				  });
 		},
 		filterableFieldNames() {
-			return this.fields.filter(field => field.datatype).map(field => field.field);
+			let fieldsFiltered = this.fields
+				.filter(field => field.datatype)
+				.map(field => field.field);
+			let O2MfieldsFiltered = this.fields.filter(field => field.type == 'O2M');
+			for (var i = 0; i < O2MfieldsFiltered.length; i++) {
+				let O2MFields = O2MfieldsFiltered[i].options.fields.split(',');
+				for (var k = 0; k < O2MFields.length; k++) {
+					fieldsFiltered.push(
+						O2MfieldsFiltered[i].field +
+							'.' +
+							O2MfieldsFiltered[i].field +
+							'_id' +
+							'.' +
+							O2MFields[k]
+					);
+				}
+			}
+			return fieldsFiltered;
 		},
 		layoutNames() {
 			if (!this.$store.state.extensions.layouts) return {};
