@@ -19,7 +19,7 @@ package-test:
 package-master:
   stage: package
   only:
-    - master
+    - crawlyfi-master
   before_script:
     - echo -n $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
   script:
@@ -53,3 +53,30 @@ deploy-test:
     - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker pull $CI_REGISTRY_IMAGE:test
     - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT "docker service rm $NAME || true"
     - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker service create -d --name $NAME --with-registry-auth --replicas $REPLICAS --network $NETWORK -e API_HOST=https://product.api.crawlyfi.dev/ $TRAEFIK $CI_REGISTRY_IMAGE:test
+
+deploy-master:
+  stage: deploy
+  only:
+    - crawlyfi-master
+  environment:
+    name: prod
+  variables:
+    NAME: crawlyfi-product-srv-$CI_PROJECT_NAME
+    REPLICAS: 1
+    NETWORK: traefik-public
+    URL: product.crawlyfi.com
+    PORT: 80
+    TRAEFIK: "-l traefik.enable=true -l traefik.frontend.rule=Host:$URL -l traefik.port=$PORT -l traefik.docker.network=$NETWORK -l traefik.redirectorservice.frontend.entryPoints=http -l traefik.redirectorservice.frontend.redirect.entryPoint=https -l traefik.webservice.frontend.entryPoints=https -l traefik.tags=traefik-public"
+  before_script:
+    - "which ssh-agent || ( apk upgrade && apk update && apk add openssh-client )"
+    - eval $(ssh-agent -s)
+    - echo "$TEST_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - apk upgrade && apk update
+    - apk add openssh-client
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker login -u "gitlab-ci-token" -p $CI_JOB_TOKEN $CI_REGISTRY
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker pull $CI_REGISTRY_IMAGE
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT "docker service rm $NAME || true"
+    - ssh -o StrictHostKeyChecking=no $TEST_USER@$TEST_HOST -p $TEST_PORT docker service create -d --name $NAME --with-registry-auth --replicas $REPLICAS --network $NETWORK -e API_HOST=https://product.api.crawlyfi.com/ $TRAEFIK $CI_REGISTRY_IMAGE    
