@@ -43,23 +43,23 @@
 			"single_comment": "Tampilkan Kotakcentang dalam kolom tunggal",
 			"draggable": "Kotakcentang yang bisa Digeser",
 			"draggable_comment": "Enable sorting by draggable checkboxes",
-			"allow_other": "Allow Other",
-			"allow_other_comment": "Allow an additional custom option"
+			"allow_other": "Izinkan lainnya",
+			"allow_other_comment": "Izinkan sebuah penambahan pilihan kustom"
 		},
 		"checkboxes-relational": {
 			"checkboxes_relational": "Checkboxes Relational",
 			"grid": "Grid",
 			"grid_comment": "Jumlah item dalam satu baris",
-			"item_template": "Item Template",
+			"item_template": "Templat item",
 			"item_template_comment": "How to display values on the single item layouts",
 			"item_template_placeholder": "{{name}} — {{first_name}}",
-			"listing_template": "Listing Template",
+			"listing_template": "Daftar templat",
 			"listing_template_comment": "How to display values on the listing layouts.<br>You'll need to prepend the collection name",
 			"listing_template_placeholder": "{{movie.name}} — {{member.first_name}}"
 		},
 		"code": {
 			"code": "Kode",
-			"template": "Template",
+			"template": "Templat",
 			"template_comment": "Provide a template the user can use to get started with",
 			"language": "Bahasa",
 			"language_comment": "Set bahasa pemrograman yang digunakan",
@@ -167,7 +167,7 @@
 			"icon": "Ikon",
 			"icon_comment": "Choose an optional icon to display on the left of the input",
 			"options_invalid": "The JSON options provided for the dropdown are invalid:",
-			"allow_other": "Allow Other",
+			"allow_other": "Izinkan lainnya",
 			"allow_other_comment": "Allow the user to add their own value"
 		},
 		"file": {
@@ -265,7 +265,7 @@
 			"include_status": "Include the status interfaces"
 		},
 		"json": {
-			"template": "Template",
+			"template": "Templat",
 			"template_comment": "Provide a template the user can use to get started with"
 		},
 		"key-value": {
@@ -598,7 +598,7 @@
 			"user": "User",
 			"avatar": "Avatar",
 			"name": "Nama",
-			"template": "Template",
+			"template": "Templat",
 			"template_comment": "How to format the users in the dropdown",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Add a placeholder"
@@ -607,7 +607,7 @@
 			"owner": "Pemilik",
 			"avatar": "Avatar",
 			"name": "Nama",
-			"template": "Template",
+			"template": "Templat",
 			"template_comment": "How to display the user on the item detail page",
 			"display": "Display",
 			"display_comment": "How to display the user on the item browse page",
@@ -625,7 +625,7 @@
 			"user_updated": "User Updated",
 			"avatar": "Avatar",
 			"name": "Nama",
-			"template": "Template",
+			"template": "Templat",
 			"template_comment": "How to display the user on the item detail page",
 			"display": "Display",
 			"display_comment": "How to display the user on the item browse page",

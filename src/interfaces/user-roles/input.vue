@@ -5,7 +5,7 @@
 		:name="name"
 		:placeholder="$t('interfaces.user-roles.choose_role')"
 		:options="selectOptions"
-		:value="primaryKey"
+		:value="selectValue"
 		:disabled="readonly"
 		@input="emitValue"
 	></v-select>
@@ -25,7 +25,7 @@ export default {
 		};
 	},
 	computed: {
-		primaryKey() {
+		selectValue() {
 			if (this.value === null) {
 				return null;
 			} else if (typeof this.value === 'object') {

@@ -6,32 +6,32 @@
 		"button-group": {
 			"button_group": "Button Group",
 			"choices": "Choices",
-			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
-			"theme": "Interface Theme",
-			"theme_comment": "Set the theme of the interface if supported",
+			"choices_comment": "Wprowadź pary wartości klucza JSON z zapisaną wartością i wyświetlanym tekstem.",
+			"theme": "Motyw interfejsu",
+			"theme_comment": "Ustaw motyw interfejsu, jeśli jest obsługiwany",
 			"value": "Wartość",
-			"flight": "Flight",
-			"cruise": "Cruise",
-			"run": "Run",
-			"bus": "Bus",
-			"bike": "Bike",
-			"train": "Train",
-			"car": "Car",
+			"flight": "Samolot",
+			"cruise": "Statek wycieczkowy",
+			"run": "Biegacz",
+			"bus": "Autobus",
+			"bike": "Rower",
+			"train": "Pociąg",
+			"car": "Samochód",
 			"other": "Inne"
 		},
 		"calendar": {
-			"calendar": "Calendar",
-			"min": "Minimum Date",
-			"min_comment": "Minimum date that can be chosen by the user",
-			"max": "Maximum Date",
-			"max_comment": "Maximum date that can be chosen by the user",
-			"formatting": "Date Format",
+			"calendar": "Kalendarz",
+			"min": "Minimalna data",
+			"min_comment": "Minimalna data możliwa do wyboru przez użytkownika",
+			"max": "Maksymalna data",
+			"max_comment": "Maksymalna data możliwa do wyboru przez użytkownika",
+			"formatting": "Format daty",
 			"formatting_comment": "Follows [Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/format). If left blank, a relative date will be used."
 		},
 		"checkboxes": {
 			"checkboxes": "Checkboxes",
 			"choices": "Choices",
-			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
+			"choices_comment": "Wprowadź pary wartości klucza JSON z zapisaną wartością i wyświetlanym tekstem.",
 			"wrap": "Wrap with Delimiter",
 			"wrap_comment": "Wrap the saved value in a delimiter (improves searchability).",
 			"formatting": "Show display text",
@@ -90,11 +90,11 @@
 			"color-picker": "Color Picker"
 		},
 		"date": {
-			"date": "Date",
+			"date": "Data",
 			"min": "Minimum date",
-			"min_comment": "Minimum date that can be chosen by the user",
+			"min_comment": "Minimalna data możliwa do wyboru przez użytkownika",
 			"max": "Maximum date",
-			"max_comment": "Maximum date that can be chosen by the user",
+			"max_comment": "Maksymalna data możliwa do wyboru przez użytkownika",
 			"localized": "Localized",
 			"localized_comment": "Show the date localized in the output",
 			"relative": "Show relative date",
@@ -157,13 +157,13 @@
 		"dropdown": {
 			"dropdown": "Dropdown",
 			"choices": "Choices",
-			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
+			"choices_comment": "Wprowadź pary wartości klucza JSON z zapisaną wartością i wyświetlanym tekstem.",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Static text that shown before a value is selected",
 			"option": "Option",
 			"formatting": "Show display text",
 			"formatting_comment": "Render the values as the display values",
-			"placeholder_default": "Choose an option...",
+			"placeholder_default": "Wybierz opcję...",
 			"icon": "Ikona",
 			"icon_comment": "Choose an optional icon to display on the left of the input",
 			"options_invalid": "The JSON options provided for the dropdown are invalid:",
@@ -319,15 +319,15 @@
 		"map": {
 			"map": "Map",
 			"choices": "choices",
-			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
-			"theme": "Interface Theme",
-			"theme_comment": "Set the theme of the interface if supported",
+			"choices_comment": "Wprowadź pary wartości klucza JSON z zapisaną wartością i wyświetlanym tekstem.",
+			"theme": "Motyw interfejsu",
+			"theme_comment": "Ustaw motyw interfejsu, jeśli jest obsługiwany",
 			"value": "Wartość",
 			"map_lat": "Default Latitude",
 			"map_lat_comment": "Map will be centered at this latitude",
 			"map_lng": "Default Longitude",
 			"map_lng_comment": "Map will be centered at this longitude",
-			"height": "Height",
+			"height": "Wysokość",
 			"default_zoom": "Default Zoom",
 			"default_zoom_comment": "Default zoom level of the map",
 			"max_zoom": "Max Zoom",
@@ -338,14 +338,14 @@
 			"address_to_code": "Address Input",
 			"address_to_code_comment": "Add an input field to automatically get the geocodes from an address. Uses <a href=\"https://wiki.openstreetmap.org/wiki/Nominatim\">Nominatim</a>. Please check their usage policy.",
 			"address_to_code_error": "No geocode found for this address",
-			"clear_location": "Clear Location",
-			"my_location": "Set My Location",
+			"clear_location": "Wyczyść lokalizację",
+			"my_location": "Ustaw moją lokalizację",
 			"address_location": "Set Address Location"
 		},
 		"markdown": {
 			"markdown": "Markdown",
 			"edit": "Edit",
-			"preview": "Preview",
+			"preview": "Podgląd",
 			"tabbed_preview": "Tabbed Preview",
 			"tabbed_preview_comment": "How to display the editor and preview",
 			"tabbed_preview_on": "Tabbed Preview",
@@ -415,7 +415,7 @@
 			"hashing_type_comment": "What method of hashing to use"
 		},
 		"preview": {
-			"preview": "Preview",
+			"preview": "Podgląd",
 			"url_template": "URL Template",
 			"url_template_comment": "A mustache template for a URL to preview content",
 			"preview_item": "Preview this item"
@@ -429,7 +429,7 @@
 		"radio-buttons": {
 			"radio": "Radio Buttons",
 			"choices": "Choices",
-			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
+			"choices_comment": "Wprowadź pary wartości klucza JSON z zapisaną wartością i wyświetlanym tekstem.",
 			"option": "Option",
 			"format": "Browse Format",
 			"format_comment": "The output format on the Browse Items page"
@@ -501,7 +501,7 @@
 			"deleted": "Deleted"
 		},
 		"tags": {
-			"tags": "Tags",
+			"tags": "Etykiety",
 			"alphabetize": "Alphabetize tags",
 			"alphabetize_comment": "Will rearrange tags to be alphabetical",
 			"lowercase": "Force Lowercase",
@@ -553,7 +553,7 @@
 			"serif_comment": "Use a larger, serif typeface"
 		},
 		"time": {
-			"time": "Time",
+			"time": "Czas",
 			"include_seconds": "Include seconds",
 			"include_seconds_comment": "Include seconds in the interface",
 			"24hour": "Display 24 hour clock",
@@ -586,7 +586,7 @@
 			"color-active-comment": "Choose the active color"
 		},
 		"translation": {
-			"translation": "Translation",
+			"translation": "Tłumaczenia",
 			"language_field": "Pole językowe",
 			"language_field_comment": "Pole zawierające kod języka w powiązanej kolekcji",
 			"languages": "Języki",
@@ -596,7 +596,7 @@
 		},
 		"user": {
 			"user": "User",
-			"avatar": "Avatar",
+			"avatar": "Awatar",
 			"name": "Nazwa",
 			"template": "Template",
 			"template_comment": "How to format the users in the dropdown",
@@ -604,8 +604,8 @@
 			"placeholder_comment": "Add a placeholder"
 		},
 		"owner": {
-			"owner": "Owner",
-			"avatar": "Avatar",
+			"owner": "Właściciel",
+			"avatar": "Awatar",
 			"name": "Nazwa",
 			"template": "Template",
 			"template_comment": "How to display the user on the item detail page",
@@ -623,7 +623,7 @@
 		},
 		"user-updated": {
 			"user_updated": "User Updated",
-			"avatar": "Avatar",
+			"avatar": "Awatar",
 			"name": "Nazwa",
 			"template": "Template",
 			"template_comment": "How to display the user on the item detail page",
@@ -633,11 +633,11 @@
 			"unknown": "Unknown"
 		},
 		"wysiwyg": {
-			"toolbar": "Toolbar Options",
+			"toolbar": "Opcje paska narzędzi",
 			"toolbar_comment": "Show, hide, and reorder toolbar options",
 			"custom_formats": "Custom Formats",
 			"custom_formats_comment": "Custom HTML wrappers for content",
-			"tinymce_options": "TinyMCE Options",
+			"tinymce_options": "Opcje TinyMCE",
 			"tinymce_options_comment": "Override any of [the TinyMCE init options](https://www.tiny.cloud/docs/configure/)."
 		}
 	}

@@ -205,7 +205,7 @@ export default {
 			return this.values?.type.split('/')[1];
 		},
 		url() {
-			return this.values?.data.full_url;
+			return this.values?.data.asset_url;
 		}
 	},
 	watch: {

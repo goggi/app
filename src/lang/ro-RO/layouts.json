@@ -6,7 +6,7 @@
       "today": "astăzi",
       "events": "Evenimente",
       "moreEvents": "adaugă încă {amount}...",
-      "noEvents": "niciun eveniment!",
+      "noEvents": "nici un eveniment încă!",
       "date": "Date",
       "datetime": "Datetime",
       "time": "Time",
@@ -18,7 +18,7 @@
       "title": "Titlu",
       "subtitle": "Subtitlu",
       "src": "Sursa Imaginii",
-      "content": "Conținut corp",
+      "content": "Conținut Corp",
       "fit": "Potrivire"
     },
     "tabular": {
@@ -31,9 +31,9 @@
       "today": "astăzi",
       "events": "Evenimente",
       "moreEvents": "adaugă încă {amount}...",
-      "noEvents": "niciun eveniment!",
+      "noEvents": "nici un eveniment încă!",
       "date": "Date",
-      "content": "Conţinut",
+      "content": "Conținut",
       "title": "Titlu",
       "color": "Color"
     }

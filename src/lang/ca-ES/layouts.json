@@ -8,7 +8,7 @@
       "moreEvents": "i {amount} mes...",
       "noEvents": "cap event!",
       "date": "Data",
-      "datetime": "Datetime",
+      "datetime": "Data i hora",
       "time": "Time",
       "title": "Títol",
       "color": "Color"

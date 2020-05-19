@@ -39,7 +39,7 @@ export default createComponent({
 		const displayValue = computed<string | null>(() => {
 			if (!props.value) return null;
 
-			const date = new Date(props.value.replace(' ', 'T') + 'Z');
+			const date = new Date(props.value);
 
 			if (props.options.showRelative) {
 				return useTimeFromNow(date).value;

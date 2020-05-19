@@ -501,7 +501,7 @@
 			"deleted": "Deleted"
 		},
 		"tags": {
-			"tags": "Tags",
+			"tags": "Etiketter",
 			"alphabetize": "Alphabetize tags",
 			"alphabetize_comment": "Will rearrange tags to be alphabetical",
 			"lowercase": "Force Lowercase",
@@ -604,7 +604,7 @@
 			"placeholder_comment": "Add a placeholder"
 		},
 		"owner": {
-			"owner": "Owner",
+			"owner": "Eier",
 			"avatar": "Avatar",
 			"name": "Navn",
 			"template": "Template",

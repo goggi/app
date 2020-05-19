@@ -151,15 +151,15 @@ export default {
 			}
 
 			if (this.image.type === 'image/svg+xml') {
-				return this.image.data.url;
+				return this.image.data.asset_url;
 			}
 
 			const size = this.width === 'full' ? 'large' : 'medium';
 			const fit = this.options.crop ? 'crop' : 'contain';
 
-			const source = this.$store.state.settings.values.asset_url_naming;
-
-			return `/${this.currentProjectKey}/assets/${this.image[source]}?key=directus-${size}-${fit}`;
+			return this.image.data?.thumbnails.find(
+				thumb => thumb.key === `directus-${size}-${fit}`
+			)?.url;
 		},
 		isImage() {
 			return this.image.type && this.image.type.startsWith('image');

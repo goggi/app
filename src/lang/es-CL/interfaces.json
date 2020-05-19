@@ -21,19 +21,19 @@
 		},
 		"calendar": {
 			"calendar": "Calendario",
-			"min": "Fecha mínima",
-			"min_comment": "Fecha mínima que puede ser elegida por el usuario",
-			"max": "Fecha máxima",
+			"min": "Fecha Mínima",
+			"min_comment": "La fecha mínima que puede ser elegida por el usuario",
+			"max": "Fecha Máxima",
 			"max_comment": "Fecha máxima que puede ser elegida por el usuario",
 			"formatting": "Formato de fecha",
 			"formatting_comment": "Sigue [Estándar Técnico Unicode](https://date-fns.org/v2.8.1/docs/format). Si se deja en blanco, se utilizará una fecha relativa."
 		},
 		"checkboxes": {
-			"checkboxes": "Casillas De Selección",
+			"checkboxes": "Casillas de Selección",
 			"choices": "Opciones",
 			"choices_comment": "Introduzca los pares de valores de la clave JSON con el valor guardado y el texto mostrado.",
-			"wrap": "Delimitar con Delimitador",
-			"wrap_comment": "Delimitar el valor guardado dentro de delimitadores (mejora la capacidad de búsqueda).",
+			"wrap": "Ajustar con Delimitador",
+			"wrap_comment": "Ajustar el valor guardado en un delimitador (mejora la capacidad de búsqueda).",
 			"formatting": "Mostrar texto en pantalla",
 			"formatting_comment": "Procesar los valores como valores de visualización",
 			"display_text": "Mostrar Texto",
@@ -43,12 +43,12 @@
 			"single_comment": "Mostrar casillas de verificación en una sola columna",
 			"draggable": "Casillas de verificación arrastrables",
 			"draggable_comment": "Permitir ordenar por casillas de verificación arrastrables",
-			"allow_other": "Permitir otro",
+			"allow_other": "Permitir Otro",
 			"allow_other_comment": "Permitir una opción personalizada adicional"
 		},
 		"checkboxes-relational": {
 			"checkboxes_relational": "Casillas de verificación relacionales",
-			"grid": "Cuadricula",
+			"grid": "Cuadrícula",
 			"grid_comment": "Número de elementos a mostrar en una fila",
 			"item_template": "Plantilla de Ítem",
 			"item_template_comment": "Como mostrar valores en plantillas de ítem único",
@@ -92,7 +92,7 @@
 		"date": {
 			"date": "Fecha",
 			"min": "Fecha mínima",
-			"min_comment": "Fecha mínima que puede ser elegida por el usuario",
+			"min_comment": "La fecha mínima que puede ser elegida por el usuario",
 			"max": "Fecha máxima",
 			"max_comment": "Fecha máxima que puede ser elegida por el usuario",
 			"localized": "Localizado",
@@ -167,7 +167,7 @@
 			"icon": "Icono",
 			"icon_comment": "Elija un icono opcional para mostrar a la izquierda del control",
 			"options_invalid": "Las opciones JSON provistas para el desplegable son inválidas:",
-			"allow_other": "Permitir otro",
+			"allow_other": "Permitir Otro",
 			"allow_other_comment": "Permitir al usuario agregar su propio valor"
 		},
 		"file": {
@@ -364,7 +364,7 @@
 			"size": "Tamaño",
 			"size_comment": "Número de opciones visibles antes de desplazarse",
 			"option": "Opción",
-			"wrap": "Delimitar con Delimitador",
+			"wrap": "Ajustar con Delimitador",
 			"wrap_comment": "Envolver los valores con un par de delimitadores para permitir la búsqueda estricta de un solo valor",
 			"format": "Formato de Navegación",
 			"format_comment": "El formato de salida en la página de Navegación de los Ítemes"
@@ -453,8 +453,8 @@
 			"fields_comment": "Qué campos mostrar en cada fila repetida",
 			"limit": "Límite",
 			"limit_comment": "Cantidad máxima de filas que el usuario puede añadir",
-			"duplicable": "Duplicable rows",
-			"duplicable_comment": "Whether to make rows duplicable or not",
+			"duplicable": "Filas duplicables",
+			"duplicable_comment": "Si hacer filas duplicables o no",
 			"structure": "Estructura",
 			"structure_comment": "Si guardar el objecto JSON como un arreglo de objetos o un solo objeto con claves únicas",
 			"structure_key": "Campo Clave de la Estructura",
