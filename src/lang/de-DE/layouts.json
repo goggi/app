@@ -6,10 +6,10 @@
       "today": "Heute",
       "events": "Ereignisse",
       "moreEvents": "und {amount} weitere...",
-      "noEvents": "Keine Ereignisse bisher!",
+      "noEvents": "Bisher keine Ereignisse!",
       "date": "Datum",
       "datetime": "Datum & Uhrzeit",
-      "time": "Time",
+      "time": "Zeit",
       "title": "Titel",
       "color": "Farbe"
     },
@@ -18,7 +18,7 @@
       "title": "Titel",
       "subtitle": "Untertitel",
       "src": "Bildquelle",
-      "content": "Inhalt",
+      "content": "Body-Inhalt",
       "fit": "Anpassung"
     },
     "tabular": {
@@ -31,7 +31,7 @@
       "today": "Heute",
       "events": "Ereignisse",
       "moreEvents": "und {amount} weitere...",
-      "noEvents": "Keine Ereignisse bisher!",
+      "noEvents": "Bisher keine Ereignisse!",
       "date": "Datum",
       "content": "Inhalt",
       "title": "Titel",

@@ -164,7 +164,7 @@
 			"formatting": "Show display text",
 			"formatting_comment": "Render the values as the display values",
 			"placeholder_default": "Choose an option...",
-			"icon": "Icon",
+			"icon": "Iconiță",
 			"icon_comment": "Choose an optional icon to display on the left of the input",
 			"options_invalid": "The JSON options provided for the dropdown are invalid:",
 			"allow_other": "Allow Other",
@@ -240,7 +240,7 @@
 			"secured": "Value Secured"
 		},
 		"icon": {
-			"icon": "Icon",
+			"icon": "Iconiță",
 			"search_placeholder": "Search for an icon..."
 		},
 		"interface-options": {
@@ -310,7 +310,7 @@
 			"preferences": "Listing View Preferences",
 			"preferences_comment": "Set what options to use for the modal",
 			"relationship_not_setup": "The relationship hasn't been configured correctly",
-			"icon": "Icon",
+			"icon": "Iconiță",
 			"icon_comment": "Choose an optional icon to display on the left of the input",
 			"select_one": "Select one",
 			"threshold": "Threshold",
@@ -604,7 +604,7 @@
 			"placeholder_comment": "Add a placeholder"
 		},
 		"owner": {
-			"owner": "Owner",
+			"owner": "Proprietar",
 			"avatar": "Avatar",
 			"name": "Name",
 			"template": "Template",

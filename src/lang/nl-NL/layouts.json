@@ -8,8 +8,8 @@
       "moreEvents": "en {amount} meer...",
       "noEvents": "nog geen activiteiten!",
       "date": "Datum",
-      "datetime": "Datetime",
-      "time": "Time",
+      "datetime": "Datum/tijd",
+      "time": "Tijd",
       "title": "Titel",
       "color": "Kleur"
     },

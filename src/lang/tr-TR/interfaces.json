@@ -26,7 +26,7 @@
 			"max": "Maksimum Tarih",
 			"max_comment": "Kullanıcı tarafından seçilebilecek maksimum tarih",
 			"formatting": "Tarih Biçimi",
-			"formatting_comment": "Follows [Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/format). If left blank, a relative date will be used."
+			"formatting_comment": "[Unicode Teknik Standardını](https://date-fns.org/v2.8.1/docs/format) izler. Boş bırakılırsa, göreli bir tarih kullanılır."
 		},
 		"checkboxes": {
 			"checkboxes": "Onay Kutuları",
@@ -182,10 +182,10 @@
 			"filters_comment": "Hangi filtreler kullanılacak",
 			"accept": "Dosya Türlerini Kabul Et",
 			"accept_comment": "Seçilebilecek MIME türlerinin bir listesini ayarlayın",
-			"allow_delete": "Allow Delete",
-			"allow_delete_comment": "Allows the user to permanently delete the related file through the file interface",
-			"crop_preview": "Crop File Preview",
-			"crop_preview_comment": "Crops the file preview to fill the available space."
+			"allow_delete": "Silmeye izin ver",
+			"allow_delete_comment": "Kullanıcının dosya arabirimi üzerinden ilgili dosyayı kalıcı olarak silmesine izin verir",
+			"crop_preview": "Dosya Önizlemesini Kırp",
+			"crop_preview_comment": "Kullanılabilir alanı doldurmak için dosya önizlemesini kırpar."
 		},
 		"file-preview": {
 			"file_preview": "Dosya Önizleme",
@@ -453,8 +453,8 @@
 			"fields_comment": "Tekrarlanan her satırda hangi alanlar gösterilecek",
 			"limit": "Limit",
 			"limit_comment": "Kullanıcının ekleyebileceği maksimum satır sayısı",
-			"duplicable": "Duplicable rows",
-			"duplicable_comment": "Whether to make rows duplicable or not",
+			"duplicable": "Kopyalanabilir satırlar",
+			"duplicable_comment": "Satırları kopyalanabilir hale getirip getirmeme",
 			"structure": "Yapı",
 			"structure_comment": "JSON'u benzersiz anahtarlarla bir nesne dizisi veya tek bir nesne olarak kaydetme",
 			"structure_key": "Yapı Anahtar Alanı",
@@ -483,8 +483,8 @@
 			"force_lowercase_comment": "Slug'ın küçük harfle yazıldığından emin olur",
 			"mirrored_field": "Yansıtılmış Alan",
 			"mirrored_field_comment": "Slug alanını başka bir (metin) alanıyla güncel tutun",
-			"only_on_create": "Only on Create",
-			"only_on_create_comment": "Allow the slug to be edited only when creating a new item"
+			"only_on_create": "Yalnızca oluştururken",
+			"only_on_create_comment": "Bilgi kutusunun yalnızca yeni bir öğe oluştururken düzenlenmesine izin ver"
 		},
 		"sort": {
 			"sort": "Sırala"
@@ -560,13 +560,13 @@
 			"24hour_comment": "Zamanı 24 saat formatında göster (örneğin: 15:30)"
 		},
 		"switch": {
-			"switch": "Switch",
-			"label_on": "Label (On)",
-			"label_on_comment": "Label to show next to the toggle when the toggle is on",
-			"label_off": "Label (Off)",
-			"label_off_comment": "Label to show next to the toggle when the toggle is off",
-			"checkbox": "Show as Checkbox",
-			"checkbox_comment": "Display a checkbox instead of the default switch"
+			"switch": "Değiştir",
+			"label_on": "Etiket (Açık)",
+			"label_on_comment": "Anahtar açıkken anahtarın yanında gösterilecek etiket",
+			"label_off": "Etiket (Kapalı)",
+			"label_off_comment": "Anahtar kapalıyken anahtarın yanında gösterilecek etiket",
+			"checkbox": "Onay Kutusu Olarak Göster",
+			"checkbox_comment": "Varsayılan anahtar yerine bir onay kutusu göster"
 		},
 		"toggle-icon": {
 			"toggle-icon": "Anahtar İkonu",
@@ -637,8 +637,8 @@
 			"toolbar_comment": "Araç çubuğu seçeneklerini göster, gizle ve yeniden sırala",
 			"custom_formats": "Özel Biçimler",
 			"custom_formats_comment": "İçerik için özel HTML sarmalayıcıları",
-			"tinymce_options": "TinyMCE Options",
-			"tinymce_options_comment": "Override any of [the TinyMCE init options](https://www.tiny.cloud/docs/configure/)."
+			"tinymce_options": "TinyMCE Ayarları",
+			"tinymce_options_comment": "[TinyMCE başlangıç seçeneklerinden](https://www.tiny.cloud/docs/configure/) herhangi birini geçersiz kılın."
 		}
 	}
 }

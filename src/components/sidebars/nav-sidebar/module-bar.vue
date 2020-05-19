@@ -124,7 +124,9 @@ export default {
 			return modules;
 		},
 		avatarURL() {
-			return this.currentUser.avatar?.data?.full_url;
+			return this.currentUser.avatar?.data?.thumbnails?.find(
+				thumb => thumb.key === 'directus-medium-crop'
+			).url;
 		},
 		fullName() {
 			const { first_name, last_name } = this.currentUser;

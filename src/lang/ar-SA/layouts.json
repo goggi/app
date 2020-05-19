@@ -3,39 +3,39 @@
     "calendar": {
       "calendar": "التقويم",
       "fields": "حقول",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
-      "date": "Date",
-      "datetime": "Datetime",
+      "today": "اليوم",
+      "events": "الأحداث",
+      "moreEvents": "و {amount} أكثر...",
+      "noEvents": "لا يوجد أحداث حتى الآن!",
+      "date": "التاريخ",
+      "datetime": "التاريخ والوقت",
       "time": "Time",
       "title": "العنوان",
-      "color": "Color"
+      "color": "لون"
     },
     "cards": {
-      "cards": "Cards",
+      "cards": "البطاقات",
       "title": "العنوان",
-      "subtitle": "Subtitle",
-      "src": "Image Source",
-      "content": "Body Content",
-      "fit": "Fit"
+      "subtitle": "الترجمة",
+      "src": "مصدر الصورة",
+      "content": "محتوى الجسم",
+      "fit": "مناسب"
     },
     "tabular": {
-      "tabular": "Table",
+      "tabular": "الجدول",
       "fields": "حقول"
     },
     "timeline": {
-      "timeline": "Timeline",
+      "timeline": "الخط",
       "fields": "حقول",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
-      "date": "Date",
-      "content": "Content",
+      "today": "اليوم",
+      "events": "الأحداث",
+      "moreEvents": "و {amount} أكثر...",
+      "noEvents": "لا يوجد أحداث حتى الآن!",
+      "date": "التاريخ",
+      "content": "محتوى",
       "title": "العنوان",
-      "color": "Color"
+      "color": "لون"
     }
   }
 }

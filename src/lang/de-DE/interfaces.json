@@ -10,8 +10,8 @@
 			"theme": "Oberflächendesign",
 			"theme_comment": "Setze das Design der Schnittstelle, falls unterstützt",
 			"value": "Wert",
-			"flight": "Flight",
-			"cruise": "Cruise",
+			"flight": "Flug",
+			"cruise": "Kreuzfahrt",
 			"run": "Ausführen",
 			"bus": "Bus",
 			"bike": "Fahrrad",
@@ -34,7 +34,7 @@
 			"choices_comment": "Geben Sie die JSON-Schlüsselwert-Paare mit dem gespeicherten Wert und dem angezeigten Text ein.",
 			"wrap": "Mit Trennzeichen umbrechen",
 			"wrap_comment": "Den gespeicherten Wert in ein Trennzeichen umbrechen(verbessert die Durchsuchbarkeit).",
-			"formatting": "Show display text",
+			"formatting": "Text anzeigen",
 			"formatting_comment": "Werte als Anzeigewerte verwenden",
 			"display_text": "Text anzeigen",
 			"value": "Wert",
@@ -108,7 +108,7 @@
 			"datetime": "Datum & Uhrzeit",
 			"min": "Anfangsdatum",
 			"min_comment": "Kleinstes Datum, dass vom Benutzer ausgewählt werden kann",
-			"max": "Maximum time",
+			"max": "Maximale Dauer",
 			"max_comment": "Größtes Datum, dass vom Benutzer ausgewählt werden kann",
 			"localized": "Lokalisiert",
 			"localized_comment": "Lokalisiertes Datum in Anzeige",
@@ -123,34 +123,34 @@
 			"default_to_current_datetime": "Aktuelles Datum als Standard verwenden",
 			"default_to_current_datetime_comment": "Setzt das aktuelle Datum als Standardwert",
 			"format": "Format",
-			"format_comment": "The DateTime format to use for the input"
+			"format_comment": "Das Datumsformat für die Eingabe"
 		},
 		"datetime-created": {
-			"datetime_created": "Datetime Created",
+			"datetime_created": "Datum/Zeit erzeugt",
 			"relative": "Relative Datumsanzeige",
 			"relative_comment": "Datum relativ anzeigen (z.B. vor 50 Minuten)",
-			"now": "You are creating this now",
+			"now": "Sie erstellen dies jetzt",
 			"unknown": "Unbekannt"
 		},
 		"datetime-updated": {
 			"datetime_updated": "Aktualisierte Datumszeit",
 			"relative": "Relative Datumsanzeige",
 			"relative_comment": "Datum relativ anzeigen (z.B. vor 50 Minuten)",
-			"now": "You are creating this now",
+			"now": "Sie erstellen dies jetzt",
 			"unknown": "Unbekannt"
 		},
 		"divider": {
 			"divider": "Divider",
-			"style-name": "Divider style",
+			"style-name": "Divider-Stil",
 			"style-comment": "Change the style of the Divider",
 			"weight-name": "Dicke der Linie",
-			"weight-comment": "Change the thickness of the line",
-			"input-name": "Divider text",
+			"weight-comment": "Ändern Sie die Dicke der Linie",
+			"input-name": "Divider-Text",
 			"input-comment": "Geben Sie Ihren Text hier ein",
-			"desc-name": "Divider description",
+			"desc-name": "Divider-Beschreibung",
 			"desc-comment": "Beschreibung hinzufügen",
 			"hr-name": "HR",
-			"hr-comment": "Display a horizontal rule?",
+			"hr-comment": "Horizontale Linie anzeigen?",
 			"margin-name": "Zusätzlicher Abstand",
 			"margin-comment": "Zusätzlicher Abstand oberhalb der Benutzeroberfläche hinzufügen"
 		},
@@ -161,25 +161,25 @@
 			"placeholder": "Platzhalter",
 			"placeholder_comment": "Statischer Text, der angezeigt wird, bevor ein Wert ausgewählt wurde",
 			"option": "Option",
-			"formatting": "Show display text",
+			"formatting": "Text anzeigen",
 			"formatting_comment": "Werte als Anzeigewerte verwenden",
 			"placeholder_default": "Wählen Sie eine Option...",
 			"icon": "Symbol",
 			"icon_comment": "Optionales Icon, für Anzeige links neben der Eingabe",
-			"options_invalid": "The JSON options provided for the dropdown are invalid:",
+			"options_invalid": "Die angegebenen JSON-Optionen für das Dropdown sind ungültig:",
 			"allow_other": "Andere erlauben",
-			"allow_other_comment": "Allow the user to add their own value"
+			"allow_other_comment": "Erlauben Sie dem Benutzer seine eigenen Werte hinzuzufügen"
 		},
 		"file": {
 			"file": "Datei",
 			"view_type": "Ansicht",
-			"view_type_comment": "Select in what way you want to view the files",
+			"view_type_comment": "Wählen Sie aus, wie die Dateien angezeigt werden sollen",
 			"view_options": "Anzeigeeinstellungen",
-			"view_options_comment": "Set the view options to use for the files",
-			"view_query": "View Query",
-			"view_query_comment": "Set the view query to use for the files",
+			"view_options_comment": "Legen Sie die Anzeigeoptionen für die Dateien fest",
+			"view_query": "Abfrage anzeigen",
+			"view_query_comment": "Legen Sie die Anfragenanzeige für die Dateien fest",
 			"filters": "Filter",
-			"filters_comment": "What filters to use",
+			"filters_comment": "Welche Filter verwendet werden sollen",
 			"accept": "Erlaubte Dateitypen",
 			"accept_comment": "Set a list of MIME types that can be picked",
 			"allow_delete": "Löschen erlauben",
@@ -325,10 +325,10 @@
 			"value": "Wert",
 			"map_lat": "Standard-Breitengrad",
 			"map_lat_comment": "Map will be centered at this latitude",
-			"map_lng": "Default Longitude",
+			"map_lng": "Standard-Längengrad",
 			"map_lng_comment": "Map will be centered at this longitude",
 			"height": "Höhe",
-			"default_zoom": "Default Zoom",
+			"default_zoom": "Vorgegebener Zoomfaktor",
 			"default_zoom_comment": "Default zoom level of the map",
 			"max_zoom": "Maximale Zoomstufe",
 			"max_zoom_comment": "Maximum zoom allowed in the map",
@@ -338,7 +338,7 @@
 			"address_to_code": "Adresseingabe",
 			"address_to_code_comment": "Add an input field to automatically get the geocodes from an address. Uses <a href=\"https://wiki.openstreetmap.org/wiki/Nominatim\">Nominatim</a>. Please check their usage policy.",
 			"address_to_code_error": "No geocode found for this address",
-			"clear_location": "Clear Location",
+			"clear_location": "Standort entfernen",
 			"my_location": "Meinen Standort festlegen",
 			"address_location": "Set Address Location"
 		},
@@ -367,7 +367,7 @@
 			"wrap": "Mit Trennzeichen umbrechen",
 			"wrap_comment": "Verpacken Sie die Werte mit einem Begrenzungspaar, um eine genaue Suche nach einem einzelnen Wert zu ermöglichen",
 			"format": "Format durchsuchen",
-			"format_comment": "The output format on the Browse Items page"
+			"format_comment": "Das Ausgabeformat auf der Übersichtseite"
 		},
 		"numeric": {
 			"numeric": "Numerisch",
@@ -380,7 +380,7 @@
 			"icon_right": "Icon rechts",
 			"icon_right_comment": "Optionales Icon, für Anzeige links neben der Eingabe",
 			"monospace": "Monospace",
-			"monospace_comment": "Use a monospace font"
+			"monospace_comment": "Monospace-Schrift verwenden"
 		},
 		"one-to-many": {
 			"o2m": "1 zu n",
@@ -398,7 +398,7 @@
 			"allow_select": "Auswahl erlauben",
 			"allow_select_comment": "Dem Benutzer erlauben, ein vorhandenes Element auszuwählen",
 			"delete_mode": "Löschmodus",
-			"delete_mode_comment": "What to do when the user deselects an item",
+			"delete_mode_comment": "Was ist zu tun ist, wenn der Benutzer ein Element abwählt",
 			"sort_field": "Sortierfeld",
 			"sort_field_comment": "The field to store the sort value in"
 		},
@@ -416,7 +416,7 @@
 		},
 		"preview": {
 			"preview": "Vorschau",
-			"url_template": "URL Template",
+			"url_template": "URL Vorlage",
 			"url_template_comment": "A mustache template for a URL to preview content",
 			"preview_item": "Vorschau dieses Elements"
 		},
@@ -424,7 +424,7 @@
 			"primary_key": "Primärschlüssel",
 			"immutable": "Kann nicht geändert werden",
 			"monospace": "Monospace",
-			"monospace_comment": "Use a monospace font"
+			"monospace_comment": "Monospace-Schrift verwenden"
 		},
 		"radio-buttons": {
 			"radio": "Radio Buttons",
@@ -432,16 +432,16 @@
 			"choices_comment": "Geben Sie die JSON-Schlüsselwert-Paare mit dem gespeicherten Wert und dem angezeigten Text ein.",
 			"option": "Option",
 			"format": "Format durchsuchen",
-			"format_comment": "The output format on the Browse Items page"
+			"format_comment": "Das Ausgabeformat auf der Übersichtseite"
 		},
 		"rating": {
-			"rating": "Rating",
+			"rating": "Bewertung",
 			"value": "Wert",
 			"active_color": "Aktive Farbe",
 			"active_color_comment": "Aktive Farbe der ausgewählten Sterne",
-			"max_stars": "Max Stars",
+			"max_stars": "Max. Sterne",
 			"max_stars_comment": "Number of maximum rating allowed",
-			"display": "Display",
+			"display": "Anzeige",
 			"display_comment": "Wie Bewertungswerte angezeigt werden"
 		},
 		"repeater": {
@@ -453,7 +453,7 @@
 			"fields_comment": "What fields to show in each repeated row",
 			"limit": "Limit",
 			"limit_comment": "Maximum amount of rows the user can add",
-			"duplicable": "Duplicable rows",
+			"duplicable": "Doppelte Zeilen",
 			"duplicable_comment": "Whether to make rows duplicable or not",
 			"structure": "Struktur",
 			"structure_comment": "Whether to save the JSON as an array of objects or single object with unique keys",
@@ -518,26 +518,26 @@
 			"icon_right": "Icon rechts",
 			"icon_right_comment": "Optionales Icon, für Anzeige links neben der Eingabe",
 			"validation": "Validierung",
-			"validation_comment": "A RegEx to check each individual value against",
-			"validation_message": "Validation Message",
+			"validation_comment": "Ein RegEx um jeden einzelnen Wert zu überprüfen",
+			"validation_message": "Fehlermeldung",
 			"validation_message_comment": "A short message to show users if tag validation fails",
-			"validation_message_default": "Please enter a valid tag"
+			"validation_message_default": "Bitte gültigen Tag eingeben"
 		},
 		"text-input": {
-			"input": "Text Input",
+			"input": "Texteingabe",
 			"placeholder": "Platzhalter",
-			"trim": "Trim",
+			"trim": "Beschneiden",
 			"trim_comment": "Trim surrounding whitespace from the value before saving",
-			"char_count": "Show Character Count",
+			"char_count": "Zeige Zeichenanzahl",
 			"char_count_comment": "Show the remaining characters available",
 			"icon_left": "Icon links",
 			"icon_left_comment": "Optionales Icon, für Anzeige links neben der Eingabe",
 			"icon_right": "Icon rechts",
 			"icon_right_comment": "Optionales Icon, für Anzeige links neben der Eingabe",
-			"format": "Pretty Output",
+			"format": "Vorschau",
 			"format_comment": "Convert the value to title case",
 			"monospace": "Monospace",
-			"monospace_comment": "Use a monospace font",
+			"monospace_comment": "Monospace-Schrift verwenden",
 			"auto": "Automatisch",
 			"small": "Klein",
 			"medium": "Mittel",
@@ -553,9 +553,9 @@
 			"serif_comment": "Use a larger, serif typeface"
 		},
 		"time": {
-			"time": "Time",
-			"include_seconds": "Include seconds",
-			"include_seconds_comment": "Include seconds in the interface",
+			"time": "Zeit",
+			"include_seconds": "Sekunden einbeziehen",
+			"include_seconds_comment": "Sekunden in der Schnittstelle einbeziehen",
 			"24hour": "Display 24 hour clock",
 			"24hour_comment": "Show the time in 24-hour format (eg.: 15:30)"
 		},
@@ -575,15 +575,15 @@
 			"text-inactive-placeholder": "Geben Sie hier Ihren Text ein",
 			"icon-inactive-name": "Inaktives Icon",
 			"icon-inactive-comment": "Choose an inactive icon",
-			"color-inactive-name": "Inactive Color",
-			"color-inactive-comment": "Choose the inactive color",
+			"color-inactive-name": "Inaktive Farbe",
+			"color-inactive-comment": "Wählen Sie die inaktive Farbe",
 			"text-active-name": "Aktiver Text",
-			"text-active-comment": "Text next to the active icon",
+			"text-active-comment": "Text neben dem aktiven Icon",
 			"text-active-placeholder": "Geben Sie hier Ihren Text ein",
-			"icon-active-name": "Active Icon",
-			"icon-active-comment": "Choose an active icon",
+			"icon-active-name": "Aktives Icon",
+			"icon-active-comment": "Wähle ein aktives Icon aus",
 			"color-active-name": "Aktive Farbe",
-			"color-active-comment": "Choose the active color"
+			"color-active-comment": "Wähle die aktive Farbe aus"
 		},
 		"translation": {
 			"translation": "Übersetzung",
@@ -609,7 +609,7 @@
 			"name": "Name",
 			"template": "Vorlage",
 			"template_comment": "How to display the user on the item detail page",
-			"display": "Display",
+			"display": "Anzeige",
 			"display_comment": "How to display the user on the item browse page",
 			"you": "Sie werden der Ersteller sein",
 			"unknown": "Unbekannt"
@@ -627,7 +627,7 @@
 			"name": "Name",
 			"template": "Vorlage",
 			"template_comment": "How to display the user on the item detail page",
-			"display": "Display",
+			"display": "Anzeige",
 			"display_comment": "How to display the user on the item browse page",
 			"you": "Sie werden der Ersteller sein",
 			"unknown": "Unbekannt"

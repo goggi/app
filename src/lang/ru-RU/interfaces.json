@@ -26,7 +26,7 @@
 			"max": "Максимальная дата",
 			"max_comment": "Максимальная дата, которая может быть установлена пользователем",
 			"formatting": "Формат даты",
-			"formatting_comment": "Follows [Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/format). If left blank, a relative date will be used."
+			"formatting_comment": "Следует [Технический стандарт Unicode (https://date-fns.org/v2.8.1/docs/format). Если оставить пустым, будет использована относительная дата."
 		},
 		"checkboxes": {
 			"checkboxes": "Флажки",
@@ -183,9 +183,9 @@
 			"accept": "Принимать типы файлов",
 			"accept_comment": "Задать список MIME типов, которые можно выбрать",
 			"allow_delete": "Разрешить удаление",
-			"allow_delete_comment": "Allows the user to permanently delete the related file through the file interface",
+			"allow_delete_comment": "Позволяет пользователю навсегда удалить соответствующий файл через файловый интерфейс",
 			"crop_preview": "Обрезать предпросмотр файла",
-			"crop_preview_comment": "Crops the file preview to fill the available space."
+			"crop_preview_comment": "Обрезает файл предварительного просмотра, чтобы заполнить доступное место."
 		},
 		"file-preview": {
 			"file_preview": "Предпросмотр файла",
@@ -453,8 +453,8 @@
 			"fields_comment": "Какие поля показывать в каждой повторной строке",
 			"limit": "Лимит",
 			"limit_comment": "Максимальное количество строк, которое пользователь может добавить",
-			"duplicable": "Duplicable rows",
-			"duplicable_comment": "Whether to make rows duplicable or not",
+			"duplicable": "Дублирующиеся строки",
+			"duplicable_comment": "Можно ли сделать строки дублируемыми или нет",
 			"structure": "Структура",
 			"structure_comment": "Сохранять JSON как массив объектов или один объект с уникальными ключами",
 			"structure_key": "Поле ключа структуры",
@@ -484,7 +484,7 @@
 			"mirrored_field": "Зеркальное поле",
 			"mirrored_field_comment": "Сохранять slug в актуальном состоянии с другим (текст) полем",
 			"only_on_create": "Только при создании",
-			"only_on_create_comment": "Allow the slug to be edited only when creating a new item"
+			"only_on_create_comment": "Разрешить изменение урла только при создании нового элемента"
 		},
 		"sort": {
 			"sort": "Сортируемое"
@@ -562,9 +562,9 @@
 		"switch": {
 			"switch": "Переключатель",
 			"label_on": "Текст в положении \"вкл.\"",
-			"label_on_comment": "Label to show next to the toggle when the toggle is on",
+			"label_on_comment": "Метка, отображаемая рядом с переключателем, когда переключатель включен",
 			"label_off": "Выкл.",
-			"label_off_comment": "Label to show next to the toggle when the toggle is off",
+			"label_off_comment": "Метка, отображаемая рядом с переключателем, когда переключатель выключен",
 			"checkbox": "Отображать как флажок",
 			"checkbox_comment": "Показывать флажок вместо переключателя"
 		},
@@ -638,7 +638,7 @@
 			"custom_formats": "Пользовательские форматы",
 			"custom_formats_comment": "Пользовательские HTML упаковщики для контента",
 			"tinymce_options": "Параметры TinyMCE",
-			"tinymce_options_comment": "Override any of [the TinyMCE init options](https://www.tiny.cloud/docs/configure/)."
+			"tinymce_options_comment": "Переопределите любой из [настроек инициализации TinyMCE](https://www.tiny.cloud/docs/configure/)."
 		}
 	}
 }

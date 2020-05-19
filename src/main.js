@@ -33,6 +33,22 @@ Vue.config.productionTip = false;
 // Make lodash globally available under it's common name `_`
 window._ = lodash;
 
+// Export modules on demand to externl scripts
+// Sample Usage: let _ = $directus.import('lodash');
+window.$directus = window.$directus || {};
+window.$directus.import = (module) => {
+	const modules = {
+		"api": api,
+		"axios": axios,
+		"lodash": lodash,
+		"notify": notify,
+		"router": router,
+		"store": store
+	};
+	if (!module) return modules;
+	else return modules[module];
+};
+
 Object.defineProperties(Vue.prototype, {
 	$api: { value: api },
 	$notify: { value: notify },

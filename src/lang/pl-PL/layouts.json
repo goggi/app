@@ -1,40 +1,40 @@
 {
   "layouts": {
     "calendar": {
-      "calendar": "Calendar",
+      "calendar": "Kalendarz",
       "fields": "Pola",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
-      "date": "Date",
+      "today": "dziś",
+      "events": "Wydarzenia",
+      "moreEvents": "i {amount} więcej...",
+      "noEvents": "brak wydarzeń!",
+      "date": "Data",
       "datetime": "Datetime",
-      "time": "Time",
-      "title": "Title",
+      "time": "Czas",
+      "title": "Tytuł",
       "color": "Color"
     },
     "cards": {
-      "cards": "Cards",
-      "title": "Title",
-      "subtitle": "Subtitle",
-      "src": "Image Source",
-      "content": "Body Content",
-      "fit": "Fit"
+      "cards": "Karty",
+      "title": "Tytuł",
+      "subtitle": "Subtytuł",
+      "src": "Źródło obrazu",
+      "content": "Treść",
+      "fit": "Dopasuj"
     },
     "tabular": {
-      "tabular": "Table",
+      "tabular": "Tabela",
       "fields": "Pola"
     },
     "timeline": {
-      "timeline": "Timeline",
+      "timeline": "Oś czasu",
       "fields": "Pola",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
-      "date": "Date",
-      "content": "Content",
-      "title": "Title",
+      "today": "dziś",
+      "events": "Wydarzenia",
+      "moreEvents": "i {amount} więcej...",
+      "noEvents": "brak wydarzeń!",
+      "date": "Data",
+      "content": "Treść",
+      "title": "Tytuł",
       "color": "Color"
     }
   }

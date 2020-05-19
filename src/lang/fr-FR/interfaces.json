@@ -183,9 +183,9 @@
 			"accept": "Accepter les types de fichier",
 			"accept_comment": "Définir une liste de types MIME qui peuvent être choisis",
 			"allow_delete": "Autoriser la suppression",
-			"allow_delete_comment": "Allows the user to permanently delete the related file through the file interface",
-			"crop_preview": "Crop File Preview",
-			"crop_preview_comment": "Crops the file preview to fill the available space."
+			"allow_delete_comment": "Permet à l'utilisateur de supprimer définitivement le fichier associé via l'interface de fichier",
+			"crop_preview": "Aperçu du fichier recadré",
+			"crop_preview_comment": "Recadre l'aperçu du fichier pour remplir l'espace disponible."
 		},
 		"file-preview": {
 			"file_preview": "Aperçu du fichier",
@@ -454,7 +454,7 @@
 			"limit": "Limiter",
 			"limit_comment": "Nombre maximum de lignes que l'utilisateur peut ajouter",
 			"duplicable": "Lignes dupliquées",
-			"duplicable_comment": "Whether to make rows duplicable or not",
+			"duplicable_comment": "Que ce soit pour rendre les lignes duplicables ou non",
 			"structure": "Structure",
 			"structure_comment": "Enregistrer le JSON en tant que tableau d'objets ou d'objet unique avec des clés uniques",
 			"structure_key": "Structurer le champ clé",
@@ -560,13 +560,13 @@
 			"24hour_comment": "Afficher l'heure au format 24 heures (ex: 15:30)"
 		},
 		"switch": {
-			"switch": "Switch",
+			"switch": "Changer",
 			"label_on": "Étiquette (activée)",
 			"label_on_comment": "Étiquette à afficher à côté du bouton lorsque le bouton est activé",
 			"label_off": "Étiquette (Désactivée)",
 			"label_off_comment": "Étiquette à afficher à côté du bouton lorsque le bouton est éteint",
 			"checkbox": "Afficher en tant que case à cocher",
-			"checkbox_comment": "Display a checkbox instead of the default switch"
+			"checkbox_comment": "Afficher une case à cocher au lieu du bouton à bascule"
 		},
 		"toggle-icon": {
 			"toggle-icon": "Bouton à bascule",

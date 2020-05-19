@@ -356,17 +356,7 @@
 
 				<p class="type-label">{{ $t('junction_collection') }}</p>
 
-				<v-simple-select
-					v-if="!createM2Mjunction"
-					class="select"
-					:value="relationInfoM2M[0].collection_many"
-					@input="
-						val => {
-							relationInfoM2M[0].collection_many = val;
-							relationInfoM2M[1].collection_many = val;
-						}
-					"
-				>
+				<v-simple-select v-if="!createM2Mjunction" v-model="junctionNameM2M" class="select">
 					<optgroup :label="$tc('collection', 2)">
 						<option
 							v-for="collection in collectionsGrouped.user"
@@ -389,7 +379,7 @@
 
 				<v-input
 					v-if="createM2Mjunction"
-					v-model="createM2MjunctionName"
+					v-model="junctionNameM2M"
 					class="select"
 					type="text"
 					:placeholder="
@@ -672,7 +662,7 @@ export default {
 			],
 
 			createM2Mjunction: false,
-			createM2MjunctionName: null
+			junctionNameM2M: null
 		};
 	},
 	computed: {
@@ -1063,7 +1053,7 @@ export default {
 				var currentCollection = this.collectionInfo.collection;
 				this.relationInfoM2M[ix].field_one = currentCollection;
 				this.relationInfoM2M[ix === 0 ? 1 : 0].field_one = currentCollection;
-				this.createM2MjunctionName = this.autoM2Msuggestion(
+				this.junctionNameM2M = this.autoM2Msuggestion(
 					currentCollection,
 					this.relationInfoM2M[ix == 0 ? 1 : 0].collection_one
 				);
@@ -1079,11 +1069,16 @@ export default {
 				this.initRelation();
 			}
 		},
-		createM2MjunctionName(val) {
-			var formatval = this.validateFieldName(val);
-			this.createM2MjunctionName = formatval;
-			this.relationInfoM2M[0].collection_many = formatval;
-			this.relationInfoM2M[1].collection_many = formatval;
+		junctionNameM2M(val) {
+			if (this.createM2Mjunction) {
+				var formatval = this.validateFieldName(val);
+				this.junctionNameM2M = formatval;
+				this.relationInfoM2M[0].collection_many = formatval;
+				this.relationInfoM2M[1].collection_many = formatval;
+			} else {
+				this.relationInfoM2M[0].collection_many = val;
+				this.relationInfoM2M[1].collection_many = val;
+			}
 		}
 	},
 	created() {
@@ -1294,10 +1289,9 @@ export default {
 				const existingRelation = cloneDeep(this.$store.getters.o2m(collection, field));
 
 				if (field && existingRelation) {
-					this.relationInfoM2M[0].id = existingRelation.id;
+					this.junctionNameM2M = existingRelation.collection_many.collection;
 
-					this.relationInfoM2M[0].collection_many =
-						existingRelation.collection_many.collection;
+					this.relationInfoM2M[0].id = existingRelation.id;
 
 					this.relationInfoM2M[0].field_many = existingRelation.field_many.field;
 
@@ -1310,9 +1304,6 @@ export default {
 
 					this.relationInfoM2M[1].id = existingRelation.junction.id;
 
-					this.relationInfoM2M[1].collection_many =
-						existingRelation.collection_many.collection;
-
 					this.relationInfoM2M[1].field_many = existingRelation.junction.field_many.field;
 
 					this.relationInfoM2M[1].collection_one =
@@ -1324,7 +1315,7 @@ export default {
 
 					this.relationInfoM2M[1].junction_field = existingRelation.field_many.field;
 				} else {
-					this.relationInfoM2M[0].collection_many = Object.keys(this.collections)[0];
+					this.junctionNameM2M = Object.keys(this.collections)[0];
 
 					this.relationInfoM2M[0].field_many = Object.values(
 						Object.values(this.collections)[0].fields
@@ -1335,8 +1326,6 @@ export default {
 					this.relationInfoM2M[0].junction_field = Object.values(
 						Object.values(this.collections)[0].fields
 					)[0].field;
-
-					this.relationInfoM2M[1].collection_many = Object.keys(this.collections)[0];
 
 					this.relationInfoM2M[1].field_many = Object.values(
 						Object.values(this.collections)[0].fields
@@ -1409,7 +1398,7 @@ export default {
 		// issue here getting the new field to add M2M relationships without refreshing
 		createM2MjunctionCollection() {
 			var collectionData = {
-				collection: this.createM2MjunctionName,
+				collection: this.junctionNameM2M,
 				hidden: true,
 				note: this.$t('junction_collection'),
 				fields: [
@@ -1454,7 +1443,7 @@ export default {
 			var fieldDispatch = {
 				id: {
 					auto_increment: true,
-					collection: this.createM2MjunctionName,
+					collection: this.junctionNameM2M,
 					datatype: 'int',
 					default_value: null,
 					field: 'id',
@@ -1479,7 +1468,7 @@ export default {
 				}
 			};
 			fieldDispatch[this.relationInfoM2M[0].field_many] = {
-				collection: this.createM2MjunctionName,
+				collection: this.junctionNameM2M,
 				field: this.relationInfoM2M[0].field_many,
 				datatype: this.primaryKeyFieldByCollection(this.relationInfoM2M[0].collection_one)
 					.datatype,
@@ -1505,7 +1494,7 @@ export default {
 				length: 10
 			};
 			fieldDispatch[this.relationInfoM2M[1].field_many] = {
-				collection: this.createM2MjunctionName,
+				collection: this.junctionNameM2M,
 				field: this.relationInfoM2M[1].field_many,
 				datatype: this.primaryKeyFieldByCollection(this.relationInfoM2M[1].collection_one)
 					.datatype,
@@ -1541,7 +1530,7 @@ export default {
 						fields: fieldDispatch
 					});
 					this.$store.dispatch('addPermission', {
-						collection: this.createM2MjunctionName,
+						collection: this.junctionNameM2M,
 						permission: {
 							$create: defaultFull,
 							...defaultFull

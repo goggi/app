@@ -48,7 +48,23 @@
 			<div v-if="!hydrating && items.length > 0" class="items">
 				<div class="head">
 					<!-- Checkboxes -->
-					<span />
+					<span>
+						<v-icon
+							@click="toggleAll()"
+							:name="
+								value.length == 0
+									? 'check_box_outline_blank'
+									: value.length == items.length
+									? 'check_box'
+									: 'indeterminate_check_box'
+							"
+							:color="
+								value.length == items.length
+									? '--input-background-color-active'
+									: '--input-border-color'
+							"
+						/>
+					</span>
 					<span v-if="collection === 'directus_files'">{{ $t('file') }}</span>
 					<span v-for="field in fields" :key="field">
 						{{ $helpers.formatField(field, collection) }}
@@ -254,7 +270,7 @@ export default {
 
 		this.fetchItems();
 
-		this.setSearchQuery = debounce(this.setSearchQuery, 550);
+		this.setSearchQuery = debounce(this.setSearchQuery, 850);
 
 		// Fetch the total number of items in this collection, so we can accurately render the load more
 		// button
@@ -292,7 +308,7 @@ export default {
 			}
 
 			if (this.filters.length > 0) {
-				params.filters = formatFilters(this.filters);
+				Object.assign(params, formatFilters(this.filters));
 			}
 
 			if (this.collection === 'directus_files') {
@@ -351,6 +367,18 @@ export default {
 					this.loading = false;
 					this.hydrating = false;
 				});
+		},
+
+		// Select/Deselect all values and stage them to the parent component
+		toggleAll() {
+			if (this.value.length == this.items.length) {
+				this.$emit('input', []);
+			} else {
+				this.$emit(
+					'input',
+					this.items.map(item => item[this.primaryKeyField])
+				);
+			}
 		},
 
 		// Stage the value to the parent component

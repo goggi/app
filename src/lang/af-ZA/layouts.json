@@ -1,40 +1,40 @@
 {
   "layouts": {
     "calendar": {
-      "calendar": "Calendar",
+      "calendar": "Kalender",
       "fields": "Fields",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
+      "today": "vandag",
+      "events": "Gebeurtenisse",
+      "moreEvents": "en {amount} meer...",
+      "noEvents": "nog geen gebeurtenisse nie!",
       "date": "Date",
       "datetime": "Datetime",
       "time": "Time",
-      "title": "Title",
+      "title": "Titel",
       "color": "Color"
     },
     "cards": {
-      "cards": "Cards",
-      "title": "Title",
-      "subtitle": "Subtitle",
-      "src": "Image Source",
-      "content": "Body Content",
-      "fit": "Fit"
+      "cards": "Kaarte",
+      "title": "Titel",
+      "subtitle": "Subtitels",
+      "src": "Foto Bron",
+      "content": "Liggaamsinhoud",
+      "fit": "Pas"
     },
     "tabular": {
-      "tabular": "Table",
+      "tabular": "Tafel",
       "fields": "Fields"
     },
     "timeline": {
-      "timeline": "Timeline",
+      "timeline": "Tydlyn",
       "fields": "Fields",
-      "today": "today",
-      "events": "Events",
-      "moreEvents": "and {amount} more...",
-      "noEvents": "no events yet!",
+      "today": "vandag",
+      "events": "Gebeurtenisse",
+      "moreEvents": "en {amount} meer...",
+      "noEvents": "nog geen gebeurtenisse nie!",
       "date": "Date",
-      "content": "Content",
-      "title": "Title",
+      "content": "Inhoud",
+      "title": "Titel",
       "color": "Color"
     }
   }

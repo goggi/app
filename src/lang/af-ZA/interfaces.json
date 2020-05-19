@@ -1,70 +1,70 @@
 {
 	"interfaces": {
 		"2fa-secret": {
-			"2fa-secret": "2FA Secret"
+			"2fa-secret": "2FA Geheim"
 		},
 		"button-group": {
-			"button_group": "Button Group",
-			"choices": "Choices",
+			"button_group": "Knoppie Groep",
+			"choices": "Keuses",
 			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
-			"theme": "Interface Theme",
-			"theme_comment": "Set the theme of the interface if supported",
+			"theme": "Koppelvlak Tema",
+			"theme_comment": "Stel die tema van die koppelvlak indien ondersteun word",
 			"value": "Value",
-			"flight": "Flight",
-			"cruise": "Cruise",
-			"run": "Run",
+			"flight": "Vlug",
+			"cruise": "Skeepstog",
+			"run": "Hardloop",
 			"bus": "Bus",
-			"bike": "Bike",
-			"train": "Train",
-			"car": "Car",
+			"bike": "Fiets",
+			"train": "Trein",
+			"car": "Kar",
 			"other": "Other"
 		},
 		"calendar": {
-			"calendar": "Calendar",
-			"min": "Minimum Date",
-			"min_comment": "Minimum date that can be chosen by the user",
-			"max": "Maximum Date",
+			"calendar": "Kalender",
+			"min": "Minimum Datum",
+			"min_comment": "Minimum datum wat deur die gebruiker gekies kan word",
+			"max": "Maksimum Datum",
 			"max_comment": "Maximum date that can be chosen by the user",
-			"formatting": "Date Format",
+			"formatting": "Datum Formaat",
 			"formatting_comment": "Follows [Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/format). If left blank, a relative date will be used."
 		},
 		"checkboxes": {
-			"checkboxes": "Checkboxes",
-			"choices": "Choices",
+			"checkboxes": "Keuse Boksies",
+			"choices": "Keuses",
 			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
 			"wrap": "Wrap with Delimiter",
 			"wrap_comment": "Wrap the saved value in a delimiter (improves searchability).",
 			"formatting": "Show display text",
 			"formatting_comment": "Render the values as the display values",
-			"display_text": "Display Text",
+			"display_text": "Wys Teks",
 			"value": "Value",
-			"option": "Option",
-			"single": "Single Column",
+			"option": "Opsie",
+			"single": "Enkel Kolom",
 			"single_comment": "Display Checkboxes in single column",
 			"draggable": "Draggable Checkboxes",
 			"draggable_comment": "Enable sorting by draggable checkboxes",
-			"allow_other": "Allow Other",
-			"allow_other_comment": "Allow an additional custom option"
+			"allow_other": "Laat Ander Toe",
+			"allow_other_comment": "Laat 'n addisionele unieke opsie toe"
 		},
 		"checkboxes-relational": {
 			"checkboxes_relational": "Checkboxes Relational",
-			"grid": "Grid",
+			"grid": "Roosteruitleg",
 			"grid_comment": "Number of items to show in a row",
-			"item_template": "Item Template",
+			"item_template": "Item Modelvorm",
 			"item_template_comment": "How to display values on the single item layouts",
 			"item_template_placeholder": "{{name}} — {{first_name}}",
-			"listing_template": "Listing Template",
+			"listing_template": "Lys Modelvorm",
 			"listing_template_comment": "How to display values on the listing layouts.<br>You'll need to prepend the collection name",
 			"listing_template_placeholder": "{{movie.name}} — {{member.first_name}}"
 		},
 		"code": {
-			"code": "Code",
-			"template": "Template",
+			"code": "Kode",
+			"template": "Modelvorm",
 			"template_comment": "Provide a template the user can use to get started with",
-			"language": "Language",
-			"language_comment": "Set the programming language to use",
-			"lineNumber": "Line Number",
-			"lineNumber_comment": "Show line numbers",
+			"language": "Taal",
+			"language_comment": "Stel die programmeertaal om te gebruik",
+			"lineNumber": "Lyn Nommer",
+			"lineNumber_comment": "Wys lyn nommers",
 			"loc": "No lines of {lang} | One line of {lang} | {count} lines of {lang}",
 			"fill_template": "Fill with Template"
 		},
@@ -73,7 +73,7 @@
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Static text that shown before a value is selected",
 			"placeholder_default": "Choose a collection...",
-			"option": "Option",
+			"option": "Opsie",
 			"include_system": "Include System",
 			"include_system_comment": "Include system collections in the options"
 		},
@@ -92,7 +92,7 @@
 		"date": {
 			"date": "Date",
 			"min": "Minimum date",
-			"min_comment": "Minimum date that can be chosen by the user",
+			"min_comment": "Minimum datum wat deur die gebruiker gekies kan word",
 			"max": "Maximum date",
 			"max_comment": "Maximum date that can be chosen by the user",
 			"localized": "Localized",
@@ -156,18 +156,18 @@
 		},
 		"dropdown": {
 			"dropdown": "Dropdown",
-			"choices": "Choices",
+			"choices": "Keuses",
 			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Static text that shown before a value is selected",
-			"option": "Option",
+			"option": "Opsie",
 			"formatting": "Show display text",
 			"formatting_comment": "Render the values as the display values",
 			"placeholder_default": "Choose an option...",
 			"icon": "Icon",
 			"icon_comment": "Choose an optional icon to display on the left of the input",
 			"options_invalid": "The JSON options provided for the dropdown are invalid:",
-			"allow_other": "Allow Other",
+			"allow_other": "Laat Ander Toe",
 			"allow_other_comment": "Allow the user to add their own value"
 		},
 		"file": {
@@ -204,7 +204,7 @@
 			"crop_preview": "Crop Preview Images"
 		},
 		"files": {
-			"files": "Files",
+			"files": "Lêers",
 			"visible_columns": "Visible Columns",
 			"visible_columns_comment": "Add a CSV of columns you want to display as preview",
 			"preferences": "Listing View Preferences",
@@ -260,12 +260,12 @@
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Static text that shown before a value is selected",
 			"placeholder_default": "Choose an interface",
-			"option": "Option",
+			"option": "Opsie",
 			"relational": "Include relational interfaces",
 			"include_status": "Include the status interfaces"
 		},
 		"json": {
-			"template": "Template",
+			"template": "Modelvorm",
 			"template_comment": "Provide a template the user can use to get started with"
 		},
 		"key-value": {
@@ -277,7 +277,7 @@
 			"value_options": "Key Interface Options"
 		},
 		"language": {
-			"input": "Language",
+			"input": "Taal",
 			"select_language": "Select a language...",
 			"limit": "Limit to Directus Availability",
 			"limit_comment": "Only show languages that are available as translations in Directus"
@@ -320,14 +320,14 @@
 			"map": "Map",
 			"choices": "choices",
 			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
-			"theme": "Interface Theme",
-			"theme_comment": "Set the theme of the interface if supported",
+			"theme": "Koppelvlak Tema",
+			"theme_comment": "Stel die tema van die koppelvlak indien ondersteun word",
 			"value": "Value",
 			"map_lat": "Default Latitude",
 			"map_lat_comment": "Map will be centered at this latitude",
 			"map_lng": "Default Longitude",
 			"map_lng_comment": "Map will be centered at this longitude",
-			"height": "Height",
+			"height": "Hoogte",
 			"default_zoom": "Default Zoom",
 			"default_zoom_comment": "Default zoom level of the map",
 			"max_zoom": "Max Zoom",
@@ -357,13 +357,13 @@
 		},
 		"multiselect": {
 			"multiselect": "Multi-Select",
-			"choices": "Choices",
+			"choices": "Keuses",
 			"choices_comment": "Enter JSON key value pairs with the saved value and displayed text",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Enter placeholder text",
 			"size": "Size",
 			"size_comment": "Number of options visible before scrolling",
-			"option": "Option",
+			"option": "Opsie",
 			"wrap": "Wrap with Delimiter",
 			"wrap_comment": "Wrap the values with a pair of delimiters to allow strict searching for a single value",
 			"format": "Browse Format",
@@ -403,7 +403,7 @@
 			"sort_field_comment": "The field to store the sort value in"
 		},
 		"password": {
-			"password": "Password",
+			"password": "Wagwoord",
 			"hide": "Hide Value",
 			"hide_comment": "Display dots instead of the characters you enter",
 			"placeholder": "Placeholder",
@@ -428,9 +428,9 @@
 		},
 		"radio-buttons": {
 			"radio": "Radio Buttons",
-			"choices": "Choices",
+			"choices": "Keuses",
 			"choices_comment": "Enter JSON key value pairs with the saved value and text displayed.",
-			"option": "Option",
+			"option": "Opsie",
 			"format": "Browse Format",
 			"format_comment": "The output format on the Browse Items page"
 		},
@@ -501,7 +501,7 @@
 			"deleted": "Deleted"
 		},
 		"tags": {
-			"tags": "Tags",
+			"tags": "Sleutelwoorde",
 			"alphabetize": "Alphabetize tags",
 			"alphabetize_comment": "Will rearrange tags to be alphabetical",
 			"lowercase": "Force Lowercase",
@@ -596,18 +596,18 @@
 		},
 		"user": {
 			"user": "User",
-			"avatar": "Avatar",
+			"avatar": "Profiel prentjie",
 			"name": "Name",
-			"template": "Template",
+			"template": "Modelvorm",
 			"template_comment": "How to format the users in the dropdown",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Add a placeholder"
 		},
 		"owner": {
-			"owner": "Owner",
-			"avatar": "Avatar",
+			"owner": "Eienaar",
+			"avatar": "Profiel prentjie",
 			"name": "Name",
-			"template": "Template",
+			"template": "Modelvorm",
 			"template_comment": "How to display the user on the item detail page",
 			"display": "Display",
 			"display_comment": "How to display the user on the item browse page",
@@ -623,9 +623,9 @@
 		},
 		"user-updated": {
 			"user_updated": "User Updated",
-			"avatar": "Avatar",
+			"avatar": "Profiel prentjie",
 			"name": "Name",
-			"template": "Template",
+			"template": "Modelvorm",
 			"template_comment": "How to display the user on the item detail page",
 			"display": "Display",
 			"display_comment": "How to display the user on the item browse page",

@@ -17,12 +17,12 @@
       "cards": "Tarjetas",
       "title": "Título",
       "subtitle": "Subtítulo",
-      "src": "Orígen de la imágen",
-      "content": "Contenido del cuerpo",
+      "src": "Fuente de imagen",
+      "content": "Contenido",
       "fit": "Ajustar"
     },
     "tabular": {
-      "tabular": "Tabla",
+      "tabular": "Tabular",
       "fields": "Campos"
     },
     "timeline": {
