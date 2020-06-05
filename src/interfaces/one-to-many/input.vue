@@ -397,7 +397,7 @@ export default {
 
 			if (isNewItem === false) {
 				const collection = this.relation.collection_many.collection;
-				const res = await this.$api.getItem(collection, primaryKey, { fields: '*.*.*' });
+				const res = await this.$api.getItem(collection, primaryKey, { fields: '*.*' });
 				const item = res.data;
 
 				values = merge({}, item, values);
