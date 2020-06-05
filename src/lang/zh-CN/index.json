@@ -484,7 +484,7 @@
   "settings_webhooks": "Webhook",
   "setup_2fa": "设置 2FA",
   "show_directus_collections": "显示Directus系统集合",
-  "signed": "Signed",
+  "signed": "已签名",
   "sign_in": "登录",
   "sign_out": "退出登录",
   "sign_out_confirm": "您确定要退出登录吗?",

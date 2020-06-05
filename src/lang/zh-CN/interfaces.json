@@ -16,7 +16,7 @@
 			"bus": "公交车",
 			"bike": "自行车",
 			"train": "火车",
-			"car": "Car",
+			"car": "车",
 			"other": "其他"
 		},
 		"calendar": {
@@ -26,16 +26,16 @@
 			"max": "最大日期",
 			"max_comment": "用户可以选择的最大日期",
 			"formatting": "日期格式",
-			"formatting_comment": "Follows [Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/format). If left blank, a relative date will be used."
+			"formatting_comment": "跟随[[Unicode Technical Standard](https://date-fns.org/v2.8.1/docs/格式)。如果留空，将使用一个相对的日期。"
 		},
 		"checkboxes": {
 			"checkboxes": "复选框",
 			"choices": "选择项",
 			"choices_comment": "输入用以保存及文字显示的 JSON 键值队。",
-			"wrap": "Wrap with Delimiter",
-			"wrap_comment": "Wrap the saved value in a delimiter (improves searchability).",
+			"wrap": "换行器换行",
+			"wrap_comment": "将保存的值换成分隔符(提高可搜索性)。",
 			"formatting": "显示展示文字",
-			"formatting_comment": "Render the values as the display values",
+			"formatting_comment": "渲染值作为默认值",
 			"display_text": "显示文本",
 			"value": "值",
 			"option": "选项",
@@ -162,7 +162,7 @@
 			"placeholder_comment": "Static text that shown before a value is selected",
 			"option": "选项",
 			"formatting": "显示展示文字",
-			"formatting_comment": "Render the values as the display values",
+			"formatting_comment": "渲染值作为默认值",
 			"placeholder_default": "选择一个选项...",
 			"icon": "图标",
 			"icon_comment": "选择在输入框左侧显示的图标（可选）",
@@ -223,7 +223,7 @@
 		},
 		"hashed": {
 			"hashed": "Hashed",
-			"hide": "Hide Value",
+			"hide": "隐藏值",
 			"hide_comment": "Display dots instead of the characters you enter",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Enter placeholder text",
@@ -364,7 +364,7 @@
 			"size": "Size",
 			"size_comment": "Number of options visible before scrolling",
 			"option": "选项",
-			"wrap": "Wrap with Delimiter",
+			"wrap": "换行器换行",
 			"wrap_comment": "Wrap the values with a pair of delimiters to allow strict searching for a single value",
 			"format": "Browse Format",
 			"format_comment": "The output format on the Browse Items page"
@@ -404,7 +404,7 @@
 		},
 		"password": {
 			"password": "密码",
-			"hide": "Hide Value",
+			"hide": "隐藏值",
 			"hide_comment": "Display dots instead of the characters you enter",
 			"placeholder": "Placeholder",
 			"placeholder_comment": "Enter placeholder text",

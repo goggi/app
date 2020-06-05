@@ -18,8 +18,8 @@
       "title": "标题",
       "subtitle": "副标题",
       "src": "图像来源",
-      "content": "Body Content",
-      "fit": "Fit"
+      "content": "正文内容",
+      "fit": "适合的"
     },
     "tabular": {
       "tabular": "表",

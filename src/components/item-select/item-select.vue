@@ -50,16 +50,17 @@
 					<!-- Checkboxes -->
 					<span>
 						<v-icon
+							v-if="!single"
 							@click="toggleAll()"
 							:name="
-								value.length == 0
+								(value || []).length == 0
 									? 'check_box_outline_blank'
 									: value.length == items.length
 									? 'check_box'
 									: 'indeterminate_check_box'
 							"
 							:color="
-								value.length == items.length
+								(value || []).length == items.length
 									? '--input-background-color-active'
 									: '--input-border-color'
 							"
@@ -371,7 +372,7 @@ export default {
 
 		// Select/Deselect all values and stage them to the parent component
 		toggleAll() {
-			if (this.value.length == this.items.length) {
+			if (this.value && this.value.length == this.items.length) {
 				this.$emit('input', []);
 			} else {
 				this.$emit(
@@ -387,13 +388,13 @@ export default {
 				return this.$emit('input', primaryKey);
 			}
 
-			if (this.value.includes(primaryKey)) {
+			if (this.value && this.value.includes(primaryKey)) {
 				this.$emit(
 					'input',
 					this.value.filter(pk => pk !== primaryKey)
 				);
 			} else {
-				this.$emit('input', [...this.value, primaryKey]);
+				this.$emit('input', [...(this.value || []), primaryKey]);
 			}
 		},
 
@@ -404,7 +405,7 @@ export default {
 				return this.value == primaryKey;
 			}
 
-			return this.value.includes(primaryKey);
+			return this.value && this.value.includes(primaryKey);
 		},
 
 		// Set the search query
